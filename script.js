@@ -38,8 +38,8 @@ function addBook() {
 
   const coverInput = document.getElementById("cover").value;
   const cover = coverInput 
-      ? "images/" + coverInput.trim().replaceAll(" ", "%20") 
-     : "";
+  ? coverInput.trim() 
+  : "";
 
   if (!title || !author) return alert("Fill everything!");
 
