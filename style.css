@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+
+  background: #ffd2d2;
+  background-image: url('images/books-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* 🌸 LAYOUT */
+.app {
+  display: flex;
+}
+
+/* 🌸 HEADER */
+.header {
+  text-align: center;
+  margin: 20px 0;
+  color: #ac3f88;
+  width: 100%;
+}
+
+/* 🌸 TABS (SIDE DIVIDERS) */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  gap: 10px;
+}
+
+.tabs button {
+  background: #f8bbd0;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tabs button.active {
+  background: #ec407a;
+  color: white;
+}
+
+.tabs button:hover {
+  background: #f48fb1;
+}
+
+/* 🌸 NOTEBOOK */
+.notebook {
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* ✨ SPIRAL */
+.spiral {
+  position: absolute;
+  left: -25px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: repeating-linear-gradient(
+    #ccc,
+    #ccc 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+/* 🌸 PAGE CONTAINER */
+.page-container {
+  width: 750px;
+  height: 85vh;
+  position: relative;
+}
+
+/* 🌸 PAGE */
+.page {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+  background-size: cover;
+  background-position: center;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* 🌸 ACTIVE PAGE */
+.page.active {
+  display: block;
+}
+
+/* 🌸 INNER CONTENT */
+.content {
+  background: rgba(233, 244, 255, 0.9);
+  margin: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}
+
+/* 🌸 INPUTS */
+input, textarea, select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #f8bbd0;
+  font-size: 14px;
+}
+
+/* 🌸 BUTTON */
+button {
+  background: #f48fb1;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ec407a;
+}
+
+/* 🌸 BOOK CARD */
+.book {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+
+  background: white;
+  border: 2px solid #f8bbd0;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* 🌸 BOOK IMAGE */
+.book img {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 🌸 BOOK TEXT */
+.book h3 {
+  margin: 0;
+}
+
+.book p {
+  margin: 3px 0;
+}
+
+/* 🌸 RATING */
+.rating {
+  color: gold;
+  font-size: 14px;
+}

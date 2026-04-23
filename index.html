@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cozy Reading Journal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="header">
+    <h1>Cozy Book Journal</h1>
+  </div>
+
+  <div class="tabs">
+    <button onclick="showTab(event,'add')" class="active">Add</button>
+    <button onclick="showTab(event,'tbr')">TBR</button>
+    <button onclick="showTab(event,'reading')">Reading</button>
+    <button onclick="showTab(event,'finished')">Finished</button>
+    <button onclick="showTab(event,'stats')">Stats</button>
+  </div>
+
+  <div class="notebook">
+    <div class="spiral"></div>
+
+    <div class="page-container">
+
+      <div id="add" class="page active">
+        <div class="content">
+          <h2>Add Book</h2>
+          <input id="title" placeholder="Book Title">
+          <input id="author" placeholder="Author">
+          <textarea id="notes" placeholder="Thoughts..."></textarea>
+
+          <select id="status">
+            <option value="TBR">TBR</option>
+            <option value="Reading">Reading</option>
+            <option value="Finished">Finished</option>
+          </select>
+
+          <select id="rating">
+            <option value="0">0⭐</option>
+            <option value="1">1⭐</option>
+            <option value="2">2⭐</option>
+            <option value="3">3⭐</option>
+            <option value="4">4⭐</option>
+            <option value="5">5⭐</option>
+          </select>
+
+          <!-- ✅ UPDATED -->
+          <input id="cover" placeholder="Image name (e.g. book1.jpg)">
+
+          <button onclick="addBook()">Add Book</button>
+        </div>
+      </div>
+
+      <div id="tbr" class="page">
+        <div class="content">
+          <h2>📚 TBR</h2>
+          <div id="tbrList"></div>
+        </div>
+      </div>
+
+      <div id="reading" class="page">
+        <div class="content">
+          <h2>📖 Reading</h2>
+          <div id="readingList"></div>
+        </div>
+      </div>
+
+      <div id="finished" class="page">
+        <div class="content">
+          <h2>✅ Finished</h2>
+          <div id="finishedList"></div>
+        </div>
+      </div>
+
+      <div id="stats" class="page">
+        <div class="content">
+          <h2>📊 Stats</h2>
+          <div id="statsBox"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
