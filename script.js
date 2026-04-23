@@ -4,7 +4,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     title: "Twisted Lies",
     author: "Ana Huang",
     notes: `Going into this book i had high expectations yet i personally felt it wasn't what i expected. For a morally grey man and Fml sunshine characters they were that. I did enjoy the book however i do feel certain chapter or experience's that the Fml went through was dramatized wayy too much taking up 3 to 4 whole chapters yet when the real scary traumatic "experience" occurred the author brushed past it in a few pages which felt so odd. Overall it was a good read just wish it had more depth. In terms of steaminess 👀👀i give it 🌶️🌶️`,
-    status: "finished",
+    status: "Finished",
     rating: 4,
     cover: "twisted-lies.jpg",
     date: Date.now()
@@ -14,7 +14,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     title: "Twisted Hate",
     author: "Ana Huang",
     notes: `Absolutely amazing😍😍 honestly could not have had a better Enemies to LOVERS book. the witty banter, inside jokes and overall sassiness. What more could you ask for . In terms of steaminess 👀👀i give it 🌶️🌶️🌶️🌶️`,
-    status: "finished",
+    status: "Finished",
     rating: 5,
     cover: "twisted-hate.jpg",
     date: Date.now()
@@ -24,7 +24,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     title: "King of Wrath",
     author: "Ana Huang",
     notes: `Ohh My Freaking Goodnesss. What an amazing read, especially after being let down with twisted lies this book was everything i could have imagined. Went into it with high expectations and i was absolutely not disappointed banter, The yearning. The protective Ml and stubborn yet strong Fml. They just fused so well together. I especially enjoyed it after finishing the twisted series. Going into the King of Sin series where its a lot More mature and older character's i definitely felt the maturity in this book especially which their relationships, friendships and family dynamics. I was so refreshing . i thoroughly enjoyed this book. In terms of steaminess 👀👀i give it 🌶️🌶️🌶️🌶️`,
-    status: "finished",
+    status: "Finished",
     rating: 5,
     cover: "king-of-wrath.jpg",
     date: Date.now()
@@ -34,7 +34,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     title: "King of Pride",
     author: "Ana Huang",
     notes: `This book featured a forbidden love/romance trope. Two characters from different sides of the world(spoiler they might be more similar than they lead on). Polar opposites. Extrovert gf + Introvert bf. It was a new perspective and showed how sometimes what we feel we don't need is exactly what we need. Over all i enjoyed this book it was sweet, sassy, so amazing funny as well. It was such a fun read i finished it in 5 days. In terms of steaminess 👀👀i give it 🌶️🌶️🌶️`,
-    status: "finished",
+    status: "Finished",
     rating: 5,
     cover: "king-of-pride.jpg",
     date: Date.now()
@@ -44,7 +44,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     title: "King of Greed",
     author: "Ana Huang",
     notes: `Honestly when i read the trope for this book Marriage trouble/ neglect and negligence. I automatically wasn't a fan and i assumed i wouldn't like it ,but.... I was soooo WRONG. i FREAKINGING loved this book. It honestly had everything. Emotionally mature characters whom deeply loved and stood by each other through good and bad. He worked on his empire always wanting more and more not realizing that all the time he neglected his wife whom he loved more than life itself always thinking he had all the time in the world to make it up to her until one day she decides to leave. The yearning, the groveling, banter and the way they both love and describe each other. It was so beautiful i couldn't get enough of it. You could understand what they both felt and their points of views. The fact they they never once lost love for each other. I just loved this book so much. In terms of steaminess 👀👀i give it 🌶️🌶️🌶️`,
-    status: "finished",
+    status: "Finished",
     rating: 5,
     cover: "king-of-greed.jpg",
     date: Date.now()
@@ -55,7 +55,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     title: "King of Sloth",
     author: "Ana Huang",
     notes: "",
-    status: "tbr",
+    status: "TBR",
     rating: 0,
     cover: "king-of-sloth.jpg",
     date: Date.now()
@@ -65,7 +65,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     title: "King of Envy",
     author: "Ana Huang",
     notes: "",
-    status: "tbr",
+    status: "TBR",
     rating: 0,
     cover: "king-of-envy.jpg",
     date: Date.now()
@@ -75,7 +75,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     title: "King of Gluttony",
     author: "Ana Huang",
     notes: "",
-    status: "tbr",
+    status: "TBR",
     rating: 0,
     cover: "king-of-gluttony.jpg",
     date: Date.now()
@@ -85,7 +85,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     title: "Beach Read",
     author: "Ana Huang",
     notes: "",
-    status: "reading",
+    status: "Reading",
     rating: 0,
     cover: "beach-read.jpg",
     date: Date.now()
@@ -95,7 +95,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     title: "I Could Give You The Moon",
     author: "Ana Huang",
     notes: "",
-    status: "tbr",
+    status: "TBR",
     rating: 0,
     cover: "i-could-give-you-the-moon.jpg",
     date: Date.now()
@@ -105,7 +105,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     title: "Whispers of the deep",
     author: "Ana Huang",
     notes: "",
-    status: "tbr",
+    status: "TBR",
     rating: 0,
     cover: "whispers-of-the-deep.jpg",
     date: Date.now()
