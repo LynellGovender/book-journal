@@ -1,6 +1,32 @@
-if (!localStorage.getItem("books")) {
-  localStorage.setItem("books", JSON.stringify(books));
-}
+let books = JSON.parse(localStorage.getItem("books")) || [
+  {
+    id: 1,
+    title: "Twisted Lies",
+    author: "Ana Huang",
+    notes: "Romance, enemies to lovers",
+    status: "Finished",
+    rating: 5,
+    cover: "twisted-lies.jpg"
+  },
+  {
+    id: 2,
+    title: "Beach Read",
+    author: "Emily Henry",
+    notes: "Cute summer romance",
+    status: "Reading",
+    rating: 4,
+    cover: "beach-read.jpg"
+  },
+  {
+    id: 3,
+    title: "King of Wrath",
+    author: "Ana Huang",
+    notes: "Dark billionaire romance",
+    status: "TBR",
+    rating: 0,
+    cover: "king-of-wrath.jpg"
+  }
+];
 
 const backgrounds = {
   add: "url('add.jpg')",
@@ -67,33 +93,7 @@ function move(id, status) {
   books = books.map(b => b.id === id ? {...b, status} : b);
   save();
 }
-  {
-    id: 1,
-    title: "Twisted Lies",
-    author: "Ana Huang",
-    notes: "Romance, enemies to lovers",
-    status: "Finished",
-    rating: 5,
-    cover: "twisted-lies.jpg"
-  },
-  {
-    id: 2,
-    title: "Beach Read",
-    author: "Emily Henry",
-    notes: "Cute summer romance",
-    status: "Reading",
-    rating: 4,
-    cover: "beach-read.jpg"
-  },
-  {
-    id: 3,
-    title: "King of Wrath",
-    author: "Ana Huang",
-    notes: "Dark billionaire romance",
-    status: "TBR",
-    rating: 0,
-    cover: "king-of-wrath.jpg"
-  }
+
 ];
 function render() {
   const tbr = document.getElementById("tbrList");
