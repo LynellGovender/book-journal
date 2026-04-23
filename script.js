@@ -39,7 +39,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     cover: "king-of-pride.jpg"
   }
   {
-    id: 3,
+    id: 5,
     title: "King of Greed",
     author: "Ana Huang",
     notes: "Honestly when i read the trope for this book Marriage trouble/ neglect and negligence. I automatically wasn't a fan and i assumed i wouldn't like it ,but.... I was soooo WRONG. i FREAKINGING loved this book. It honestly had everything. Emotionally mature characters whom deeply loved and stood by each other through good and bad. He worked on his empire always wanting more and more not realizing that all the time he neglected his wife whom he loved more than life itself always thinking he had all the time in the world to make it up to her until one day she decides to leave. The yearning, the groveling, banter and the way they both love and describe each other .It was so beautiful i couldn't get enough of it . You could understand what they both felt and their points of views. The fact they they never once lost love for each other. 
@@ -49,7 +49,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     cover: "king-of-greed.jpg"
   }
   {
-    id: 3,
+    id: 6,
     title: "King of Sloth",
     author: "Ana Huang",
     notes: "",
@@ -58,7 +58,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     cover: "king-of-sloth.jpg"
   }
   {
-    id: 3,
+    id: 7,
     title: "King of Envy",
     author: "Ana Huang",
     notes: "",
@@ -67,7 +67,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     cover: "king-of-envy.jpg"
   }
   {
-    id: 3,
+    id: 8,
     title: "King of Gluttony",
     author: "Ana Huang",
     notes: "",
@@ -76,7 +76,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     cover: "king-of-gluttony.jpg"
   }
   {
-    id: 3,
+    id: 9,
     title: "Beach Read",
     author: "Ana Huang",
     notes: "",
@@ -85,7 +85,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     cover: "beach-read.jpg"
   }
   {
-    id: 3,
+    id: 10,
     title: "I Could Give You The Moon",
     author: "Ana Huang",
     notes: "",
@@ -94,7 +94,7 @@ let books = JSON.parse(localStorage.getItem("books")) || [
     cover: "i-could-give-you-the-moon.jpg"
   }
   {
-    id: 3,
+    id: 11,
     title: "Whispers of the deep",
     author: "Ana Huang",
     notes: "",
