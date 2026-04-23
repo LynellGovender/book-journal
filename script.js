@@ -1,11 +1,11 @@
 let books = JSON.parse(localStorage.getItem("books")) || [];
 
 const backgrounds = {
-  add: "url('images/add.jpg')",
-  tbr: "url('images/tbr.jpg')",
-  reading: "url('images/reading.jpg')",
-  finished: "url('images/finished.jpg')",
-  stats: "url('images/stats.jpg')"
+  add: "url('add.jpg')",
+  tbr: "url('tbr.jpg')",
+  reading: "url('reading.jpg')",
+  finished: "url('finished.jpg')",
+  stats: "url('stats.jpg')"
 };
 
 function showTab(event, tab) {
