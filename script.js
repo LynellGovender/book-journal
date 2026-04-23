@@ -56,20 +56,18 @@ function save() {
   stats();
 }
 
-/* ✅ UPDATED FUNCTION */
 function addBook() {
-  const title = document.getElementById("title").value;
-  const author = document.getElementById("author").value;
-  const notes = document.getElementById("notes").value;
+  const title = document.getElementById("title").value.trim();
+  const author = document.getElementById("author").value.trim();
+  const notes = document.getElementById("notes").value.trim();
   const status = document.getElementById("status").value;
   const rating = +document.getElementById("rating").value;
+  const cover = document.getElementById("cover").value.trim();
 
-  const coverInput = document.getElementById("cover").value;
-  const cover = coverInput 
-  ? coverInput.trim() 
-  : "";
-
-  if (!title || !author) return alert("Fill everything!");
+  if (!title || !author) {
+    alert("Fill in title and author!");
+    return;
+  }
 
   books.push({
     id: Date.now(),
@@ -82,6 +80,13 @@ function addBook() {
   });
 
   save();
+
+  document.getElementById("title").value = "";
+  document.getElementById("author").value = "";
+  document.getElementById("notes").value = "";
+  document.getElementById("cover").value = "";
+  document.getElementById("rating").value = "0";
+  document.getElementById("status").value = "TBR";
 }
 
 function del(id) {
@@ -90,29 +95,32 @@ function del(id) {
 }
 
 function move(id, status) {
-  books = books.map(b => b.id === id ? {...b, status} : b);
+  books = books.map(b =>
+    b.id === id ? { ...b, status } : b
+  );
   save();
 }
 
-];
 function render() {
   const tbr = document.getElementById("tbrList");
   const reading = document.getElementById("readingList");
   const finished = document.getElementById("finishedList");
 
-  tbr.innerHTML = reading.innerHTML = finished.innerHTML = "";
+  tbr.innerHTML = "";
+  reading.innerHTML = "";
+  finished.innerHTML = "";
 
   books.forEach(b => {
     const el = document.createElement("div");
     el.className = "book";
 
     el.innerHTML = `
-      ${b.cover ? `<img src="${b.cover}">` : ""}
+      ${b.cover ? `<img src="${b.cover}" alt="${b.title}">` : ""}
       <div>
         <h3>${b.title}</h3>
         <p>${b.author}</p>
         ${b.notes ? `<p>${b.notes}</p>` : ""}
-        ${b.status === "Finished" ? `<p class="rating">${"★".repeat(b.rating)}</p>` : ""}
+        ${b.status === "Finished" ? `<p class="rating">⭐ ${"★".repeat(b.rating)}</p>` : ""}
         <button onclick="move(${b.id}, 'TBR')">TBR</button>
         <button onclick="move(${b.id}, 'Reading')">Reading</button>
         <button onclick="move(${b.id}, 'Finished')">Finished</button>
@@ -131,12 +139,14 @@ function stats() {
   const done = books.filter(b => b.status === "Finished");
 
   const months = {};
+
   done.forEach(b => {
-    const m = new Date(b.id).toLocaleString("default", {month:"long"});
+    const m = new Date(b.id).toLocaleString("default", { month: "long" });
     months[m] = (months[m] || 0) + 1;
   });
 
   box.innerHTML = "";
+
   for (let m in months) {
     const div = document.createElement("div");
     div.textContent = `${m}: ${months[m]} books`;
